@@ -1,0 +1,90 @@
+<header>
+	<script>
+		window.addEventListener("scroll", function () {
+			if (window.scrollY >= 100) {
+				document.querySelector("header").classList.add("black");
+			} else {
+				document.querySelector("header").classList.remove("black");
+			}
+		});
+	</script>
+	<style>
+		@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+		header {
+			height: 120px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0 10%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100vw;
+			transition: 0.5s ease;
+			gap: 100px;
+		}
+
+		header.black {
+			gap: 500px;
+			height: 80px;
+			background-color: #212121;
+		}
+
+		header img {
+			height: 90px;
+			transition: 0.5s ease;
+		}
+
+		header.black img {
+			height: 70px;
+		}
+
+		header li {
+			display: inline;
+		}
+
+		header li a {
+			position: relative;
+			transition: all 0.3s ease 0s;
+			color: #fff;
+			padding: 15px 15px;
+		}
+
+		header li a::after {
+			content: "";
+			position: absolute;
+			background-color: #505050;
+			left: 50%;
+			bottom: -2px;
+			height: 3px;
+			width: 0;
+			transition: 0.15s;
+		}
+
+		header li a:hover::after {
+			width: 100%;
+			left: 0;
+		}
+
+		header li a.active {
+			color: #1fddbd;
+			font-weight: bold;
+		}
+
+		header li a.active::after {
+			background-color: #1fddbd;
+		}
+	</style>
+	<a href="index.html">
+		<img src="assets/images/Logo-header.png" alt="Gamma Jr. Engenharia"
+	/></a>
+	<nav>
+		<ul>
+			<li><a href="../../index.html" class="active">Início</a></li>
+			<li><a href="../../Serviços/">Serviços</a></li>
+			<li><a href="../../Quem Somos/">Quem Somos</a></li>
+			<li><a href="../../Blog/">Blog</a></li>
+		</ul>
+	</nav>
+</header>

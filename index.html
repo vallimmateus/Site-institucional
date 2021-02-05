@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Gamma Jr. Engenharia</title>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+		<!-- <script type="text/javascript">
+			$("#header").load("./assets/components/header.html");
+		</script> -->
+		<script type="text/javascript">
+			$.get("./assets/components/header.html", function (data) {
+				$("#nav").replaceWith(data);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="nav"></div>
+		<section>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi
+				rem consequuntur quasi voluptate unde nulla. Deserunt maxime,
+				magni odio obcaecati aliquam doloribus? Harum incidunt explicabo
+				neque soluta. Quisquam reprehenderit, amet numquam architecto,
+				corporis omnis recusandae consequatur ut tempore quaerat quae ex
+				minima maiores! Laboriosam, impedit cupiditate ipsa laborum
+				facere pariatur asperiores at numquam, sunt quasi blanditiis
+				animi! Deserunt quasi sapiente necessitatibus error autem minus,
+				temporibus id suscipit in reprehenderit voluptatum expedita
+				obcaecati facere laboriosam eius placeat fuga quis officiis
+				adipisci. Quis officia voluptatibus non saepe ab at aliquam
+				suscipit quasi inventore atque. Quas officia odio sunt aut? Sed
+				ratione quos non deleniti et, quo quod iste explicabo error
+				autem fugit illo omnis aliquid accusamus, obcaecati laudantium
+				maxime, nulla eum reprehenderit rem fuga voluptatem tempora quae
+				dolore? Quas eum vitae suscipit libero quo vero unde quia cumque
+				rerum sunt voluptas quidem, magnam eaque excepturi quasi
+				consectetur odit in natus tempore quod explicabo itaque nulla
+				assumenda? Doloribus sint corporis in dolorem unde, dicta esse
+				repudiandae error corrupti atque provident dolores neque maiores
+				sed facere veniam distinctio ipsam molestiae ipsa cupiditate!
+				Error, placeat. Ab modi eveniet expedita accusantium aspernatur
+				ipsam nesciunt alias libero rerum quos, eum praesentium. Saepe
+				odio in nostrum beatae temporibus!
+			</p>
+		</section>
+		<section></section>
+		<section></section>
+	</body>
+</html>
