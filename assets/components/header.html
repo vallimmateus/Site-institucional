@@ -75,6 +75,38 @@
 		header li a.active::after {
 			background-color: #1fddbd;
 		}
+
+		@media screen and (max-width: 1100px) {
+			header {
+				padding: 0 20px;
+				gap: 3vw;
+			}
+
+			header.black {
+				gap: unset;
+				height: 80px;
+				background-color: #212121;
+			}
+
+			header img {
+				height: 8vw;
+			}
+
+			header.black img {
+				height: 7vw;
+			}
+		}
+
+		@media screen and (max-width: 800px) {
+			header {
+				gap: 0;
+			}
+
+			header a > img,
+			img {
+				display: none;
+			}
+		}
 	</style>
 	<a href="index.html">
 		<img src="assets/images/Logo-header.png" alt="Gamma Jr. Engenharia"
